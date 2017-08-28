@@ -128,7 +128,7 @@
 		font-weight: 300;
 		line-height: 2;
 		letter-spacing: 0.2em;
-		text-transform: uppercase;
+
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -788,6 +788,7 @@
 			font-size: 0.9em;
 			list-style: none;
 		}
+
 
 			#footer .copyright li {
 				display: inline-block;
