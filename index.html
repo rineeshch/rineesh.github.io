@@ -1,119 +1,42 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
-<html>
-
-<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
-  <link rel="stylesheet" href="assets/css/normalize.min.css">
-  <link rel='stylesheet prefetch' href='assets/css/bootstrap.min.css'>
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
-		<title>Ameer Muhammed</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		   <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "NewsArticle",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "http://ameermuhammed.com"
-  },
-  "headline": "Ameer Muhammed",
-  "image": [
-    "http://ameermuhammed.com/images/profile.jpg"
-   ],
-  "datePublished": "2017-09-16T08:00:00+08:00",
-  "dateModified": "2017-09-16T09:20:00+08:00",
-  "author": {
-    "@type": "Person",
-    "name": "Ameer Muhammed"
-  },
-   "publisher": {
-    "@type": "Organization",
-    "name": "Ameer Muhammed",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "http://ameermuhammed.com/images/avatar.jpg"
-    }
-  },
-  "description": "Computer Science Enthusiast"
-}
-</script>
-	</head>
-	<body class="is-loading">
-<div id="wrappers"><div class="overlay"></div><nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation"><ul class="nav sidebar-nav"><li class="sidebar-brand"><a>Explore</a></li>
-<li><a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
-<li><a href="self-portrait.html"><i class="fa fa-fw fa fa-user"></i>Me, a self portrait</a></li>
-<li><a href="scribbles.html"><i class="fa fa-fw fa-pencil"></i>Scribbles</a></li>
-<li><a href="moments.html"><i class="fa fa-fw fa-camera"></i>Moments</a></li>
-<!-- <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Dropdown <span class="caret"></span></a>
-<ul class="dropdown-menu" role="menu"><li class="dropdown-header">Dropdown heading</li>
-<li><a href="#">Action</a></li><li><a href="#">Another action</a></li>
-<li><a href="#">Something else here</a></li>
-<li><a href="#">Separated link</a></li>
-<li><a href="#">One more separated link</a></li></ul></li> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ameer Muhammed</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/main.css">
+    <script src="assets/index.js"></script>
+</head>
 
-</ul></nav>
-<div id="page-content-wrapper"><button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas" ><span class="hamb-top"></span><span class="hamb-middle"></span><span class="hamb-bottom"></span></button>
-
-
-		<!-- Wrapper -->
-			<div id="wrapper">  
-
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-							<h1>AMEER MUHAMMED</h1>
-							<p>COMPUTER SCIENCE ENTHUSIAST</p>
-						</header>
-						
-						<fm>
-							<ul class="icons">
-					<li><a href="https://www.instagram.com/ami.mullan" class="fa-instagram"></a></li>
-						                <li><a href="https://www.facebook.com/ami.mullan" class="fa-facebook-square"></a></li>
-								<li><a href="https://www.linkedin.com/in/ameermuhammed" class="fa-linkedin-square"></a></li>
-								
-							</ul>
-						</fm>
-					</section>
-
-				<!-- Footer -->
-					<fm id="footer">
-  <a href="mailto:hello@ameermuhammed.com" class="emfo">hello@ameermuhammed.com</a> 
-
-
-						<ul class="copyright">
- 						        
-							<li>&copy; AMEER MUHAMMED</li>
-							<li>2018. </li>
-						</ul>
-					</fm>
-
-			</div>
-	
-	
-			
-			</div></div>
-
-		<!-- Scripts -->
-
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-
-			</script>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-  <script src="assets/js/index.js"></script>
-
-	</body>
-
-
+<body>
+    <div class="modeswitch">
+        <a href="#" onclick="switchmode()"><img id="sw-btn" height="20px" width="20px" class="darkmode"
+                src="assets/darkmode.svg" alt="Mode Switch"></a>
+        <span class="tooltiptext bg-light text-black" id="tooltiptext">Light Mode</span>
+    </div>
+    <div id="details" class="details bg-dark text-white">
+        <img id="avatar" class="border-white" src="assets/avatar.jpg" alt="">
+        <label class="title">AMEER MUHAMMED</label>
+        <p style="margin: 5px;"><img id="apple-logo" src="assets/apple.svg" width="4%" height="4%"> Developer | Tech Mentor</p>
+        <label class="subtitle">Computer Science Enthusiast</label>
+        <div id="social">
+            <a href="https://www.linkedin.com/in/ameermuhammed" target="_blank"><img id="likendin-icon"
+                    class="icon-white" src="assets/linkedin.svg"></a>
+            <a href="https://github.com/AmeerMuhammed" target="_blank"><img id="github-icon" class="icon-white"
+                    src="assets/github.svg"></a>
+            <!-- <img id="insta-icon" class="icon-white" src="assets/instagram.svg"> -->
+        </div>
+        <div class="btm-btns">
+            <hr style="opacity: 0.2;">
+            <a style="float: left;" href="https://ameermuhammed.github.io/resume.pdf" target="_blank">RESUME<img class="btnimg icon-white" id="resume-icon" src="assets/resume.svg"></a>
+            <a style="float: right;" href="mailto:ami.mullan@gmail.com" target="_blank">CONTACT<img class="btnimg icon-white" id="mail-icon"
+                    src="assets/porfolio.svg"></a>
+        </div>
+    </div>
+</body>
 
 </html>
