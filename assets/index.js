@@ -2,6 +2,7 @@ function switchmode() {
   var mode = document.getElementById("sw-btn").classList.contains("activedarkmode")? 0: 1;
   switch (mode) {
     case 0: //light to dark
+      document.getElementById("avatar").className="border-white";
       document.getElementById("sw-btn").classList.remove("activedarkmode");
       document.getElementById("sw-btn").classList.add("darkmode");
       document.getElementById("apple-logo").className = "";
@@ -19,12 +20,9 @@ function switchmode() {
       document.getElementById("tooltiptext").classList.remove("bg-dark");
       document.getElementById("tooltiptext").classList.remove("text-white");
       document.getElementById("tooltiptext").classList.add("text-black");
-      document.getElementById("avatar").classList.add("border-white");
-      document.getElementById("avatar").classList.remove("border-black");
       break;
     case 1: //dark to light
-      document.getElementById("avatar").classList.remove("border-white");
-      document.getElementById("avatar").classList.add("border-black");
+      document.getElementById("avatar").className="border-black";
       document.getElementById("sw-btn").classList.remove("darkmode");
       document.getElementById("sw-btn").classList.add("activedarkmode");
       document.getElementById("tooltiptext").innerHTML = "Dark Mode";
